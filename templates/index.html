@@ -1,0 +1,94 @@
+{% extends "layout-split-2_local.html" %}
+
+{% load region_tags %}
+{% load tabs_tags %}
+{% load i18n %}
+
+
+{% block title %} Mother's Follow-up {% endblock %}
+
+
+
+{% block stylesheets %}
+{{ block.super }}
+
+{% endblock %}
+
+{% block javascripts %}
+{{ block.super }}
+{% endblock %}
+
+
+{% block left %}
+
+<div class="module">
+
+	<div>
+		<h3> Summary </h3>
+		
+		<a href="/mothers"><strong>{{ total_mothers }}</strong> Mothers </a> registered.<br/>
+		<a href="/centers"><strong>{{ total_centers }}</strong> Health Centers </a> registered<br/>
+		
+		<a href="/health_profs"><strong>{{ total_hps }}</strong> Health professional{{ total_hps|pluralize }}</a> registered<br/>
+
+
+	
+	</div>	
+
+
+</div>
+
+
+<div class="module">
+
+	<div>
+		<h3> Missed Schedule </h3>
+		
+			
+	</div>	
+
+
+</div>
+
+
+<div class="module">
+
+	<div>
+		<h3> Mothers who don't respond to voice call </h3>
+		
+	
+		
+	</div>	
+
+
+</div>
+
+{% endblock %} 
+
+{% block right %}
+
+
+<div class="module">
+
+	<div>
+		<h3> Today's Schedule </h3>
+		
+	
+		
+	</div>	
+
+
+</div>
+
+<div class="module">
+
+	<div>
+		<h3> This week's Schedule </h3>
+		
+
+	</div>	
+
+
+</div>
+
+{% endblock %} 
